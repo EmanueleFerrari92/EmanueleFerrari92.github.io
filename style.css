@@ -305,20 +305,25 @@ footer {
     text-align: left; /* Aligns the text to the left */
 }
 
-@media screen and (max-width: 768px) {
+media screen and (max-width: 768px) {
     .header h1.footer-heading {
-        font-size: 24px; /* Adjust to your preference */
+        font-size: 28px; /* Adjust to your preference */
     }
 
-    .logos .logo {
-        display: block;
-        margin: 5px auto;
+    .header {
+        text-align: center;
     }
-
-    .logos {
+    
+    .header .logos {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 10px; /* Adds some spacing between the title and the icons */
+    }
+    
+    .header .logos .logo {
+        display: inline-block;
+        margin: 0 10px; /* Adjust the space between icons as needed */
     }
     .project-card {
         width: 80%;
@@ -340,6 +345,12 @@ footer {
 
     .skills-subsection.half-width {
         width: 100%;
+    }
+
+    .footer-heading {
+        margin: 0;
+        font-size: 28px;
+        color: whitesmoke;;
     }
 
 }
