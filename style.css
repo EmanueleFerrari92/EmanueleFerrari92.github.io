@@ -122,7 +122,7 @@ body {
     background-color: rgba(224, 224, 220, 0.2);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    width: calc(45% - 5px);
+    width: calc(45% - 10px);
     text-align: center;
     overflow: hidden;
     padding: 20px 25px 20px;  /* Added padding to give some space inside the card */
