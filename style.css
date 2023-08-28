@@ -1,0 +1,345 @@
+body {
+    font-family: 'Raleway', sans-serif;  /* Fixed the font family */
+    margin: 0;
+    padding: 0;
+}
+
+.heading-1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.heading-2 {
+    font-size: 28px;       
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.heading-3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #777;
+    margin-bottom: 6px;
+}
+
+.paragraph-1 {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.paragraph-2 {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 0px;
+}
+
+.header {
+     background-color: #28354f;
+     padding: 20px 90px 20px;
+     color: whitesmoke; /* This makes all text inside the header white */
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     position: sticky;
+     top: 0;
+     z-index: 1000;
+}
+
+.header .heading-1, 
+.header a {
+    color: white; /* Ensures the heading and links in the header are white */
+    text-decoration: none; /* This removes the underline from links */
+}
+.section-about {
+    margin: 0;
+    background-color: #e0e0dc;
+    padding: 20px 50px;
+    position: relative;
+}
+
+.section-about::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #28354f;
+}
+
+.section-simple {
+    margin: 0;
+    background-color: #e0e0dc;
+    padding: 20px 50px;
+}
+
+.about-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.line {
+    width: 33%;
+    height: 1px;
+    background-color: #000;
+    flex-shrink: 0;
+}
+
+.logos {
+    display: flex;
+    gap: 15px;
+    align-items: end;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    background-color: #28354f; 
+}
+
+.projects-section {
+    margin: 0;
+    background-image: radial-gradient(200% 100% at top , #d0d0cc, #506ca3);
+    padding: 50px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.project-card {
+    background-color: rgba(224, 224, 220, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: calc(45% - 10px);
+    text-align: center;
+    overflow: hidden;
+    padding: 20px 30px 20px;  /* Added padding to give some space inside the card */
+    margin-bottom: 50px;
+}
+
+.project-image {
+    transition: transform 0.3s ease;
+    width: 30vw;
+    padding-top: 30vw;
+    position: relative;
+}
+
+.project-image img {
+    transform: scale(1);
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+    transition: transform 0.4s ease, filter 0.4s ease; /* Added filter to the transition */
+    filter: none; /* Set default filter */
+    opacity: 1; /* Default opacity */
+}
+
+.project-image:hover img {
+    transform: scale(0.90);
+    filter: blur(1px); /* Adding blur */
+    opacity: 0.9; /* Reduce alpha by 10% */
+}
+
+.project-image a {
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.project-title {
+    font-size: 18px;
+    margin-bottom: 20px;
+    width: 75%;       /* Set the width to 40% of the screen */
+    margin: auto;     /* Center the text elements horizontally */
+    padding: 20px 0px 30px;  /* Adjust padding for vertical spacing. Change values as necessary */
+    text-align: left;
+
+
+}
+
+.project-description {
+    margin-top: 20px;
+    width: 75%;       /* Set the width to 40% of the screen */
+    margin: auto;     /* Center the text elements horizontally */
+    padding: 20px 0px 0px;  /* Adjust padding for vertical spacing. Change values as necessary */
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-bottom: 16px;
+
+
+}
+
+.location-section {
+    padding: 40px 50px 5px;
+    background-color: #e0e0dc;
+}
+
+.skills-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 50px;
+    background-color: #e0e0dc;
+}
+
+.skills-subsection {
+    padding-right: 20px;
+}
+
+.skills-subsection:last-child {
+    padding-right: 20px;
+}
+
+.quarter-width {
+    width: 24%;
+}
+
+.half-width {
+    width: 49%;
+}
+
+.skill {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    padding-left: 5%;
+}
+
+.rating {
+    font-size: 14px;
+    padding-right: 35%;
+}
+
+
+.academic-cv-section {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* This ensures the logo and text are vertically centered relative to each other */
+    padding: 10px 50px 1px;
+    background-color: #e0e0dc;
+}
+
+/* Additional styles */
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+
+.courses-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 1px 50px 50px;
+    background-color: #e0e0dc;
+}
+
+.column {
+    list-style-type: disc;
+    width: 48%; /* slightly less than half to account for space between */
+    padding-left: 25px; /* creates some space for the bullet points */
+}
+
+footer {
+    background-color: #37383a;
+    color: whitesmoke;
+
+    padding: 50px 90px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.footer-content {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;  /* This ensures the text section wraps below the name and icons on narrower screens */
+}
+
+.footer-top {
+    width: 100%; /* Takes up the full width */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-name {
+    flex: 1;
+    text-align: left; /* Aligns the name to the left */
+}
+
+.footer-heading {
+    margin: 0;
+    font-size: 40px;
+    color: whitesmoke;;
+}
+
+.footer-text-container {
+    flex-basis: 100%; /* Allows this container to take up the full width */
+}
+
+.footer-text {
+    margin: 0;
+    color: whitesmoke;
+    text-align: left; /* Aligns the text to the left */
+}
+
+@media screen and (max-width: 768px) {
+    .header h1.footer-heading {
+        font-size: 24px; /* Adjust to your preference */
+    }
+
+    .logos .logo {
+        display: block;
+        margin: 5px auto;
+    }
+
+    .logos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-card {
+        width: 80%;
+        margin: 20px auto; /* Centers the card */
+    }
+    .skills-subsection {
+        width: 100%;
+    }
+
+    .skills-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .skills-subsection.quarter-width {
+        width: 48%; /* slightly less than half to account for any potential paddings/margins */
+    }
+
+    .skills-subsection.half-width {
+        width: 100%;
+    }
+
+}
