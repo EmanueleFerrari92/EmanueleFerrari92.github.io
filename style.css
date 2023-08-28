@@ -354,4 +354,9 @@ media screen and (max-width: 768px) {
         color: whitesmoke;;
     }
 
+    .rating {
+    font-size: 14px;
+    padding-right: 0%;
+}
+
 }
