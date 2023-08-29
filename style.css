@@ -316,6 +316,10 @@ footer {
         font-size: 24px;        /* Adjust to your preference */
         margin-bottom: 20px;   /* Add some space between the title and logos */
     }
+    .footer .footer-heading {
+        font-size: 24px;        /* Adjust to your preference */
+        margin-bottom: 20px;   /* Add some space between the title and logos */
+    }
 
     .logos {
         display: flex;
@@ -352,15 +356,11 @@ footer {
     }
 
     .skills-subsection.quarter-width {
-        width: 48%;           /* slightly less than half to account for any potential paddings/margins */
+        width: 100%;           /* slightly less than half to account for any potential paddings/margins */
     }
 
     .skills-subsection.half-width {
         width: 100%;
-    }
-
-    .project-description {
-    text-align: left;
     }
 
 }
