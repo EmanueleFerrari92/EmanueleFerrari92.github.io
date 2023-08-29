@@ -316,10 +316,6 @@ footer {
         font-size: 24px;        /* Adjust to your preference */
         margin-bottom: 20px;   /* Add some space between the title and logos */
     }
-    .footer .footer-heading {
-        font-size: 24px;        /* Adjust to your preference */
-        margin-bottom: 20px;   /* Add some space between the title and logos */
-    }
 
     .logos {
         display: flex;
@@ -361,6 +357,19 @@ footer {
 
     .skills-subsection.half-width {
         width: 100%;
+    }
+    
+    footer {
+        background-color: #37383a;
+        color: whitesmoke;
+        padding: 40px 90px, 20px;
+        justify-content: space-between;
+        align-items: left;
+    
+    }
+    .footer .footer-heading {
+        font-size: 24px;        /* Adjust to your preference */
+        margin-bottom: 20px;   /* Add some space between the title and logos */
     }
 
 }
