@@ -10,7 +10,7 @@
 
 <style type="text/css">
 
-.header {
+header {
              background-color: #28354f;
              padding: 20px 90px 20px;
              color: whitesmoke; /* This makes all text inside the header white */
@@ -37,8 +37,39 @@
         .logo {
             width: 35px;
             height: 35px;
-            background-color: #28354f; 
+            background-color: #28354f
         }
+
+        @media screen and (max-width: 768px) {
+
+        .header {
+            flex-direction: column; /* Stack the title and logos vertically */
+            align-items: center;    /* Center them horizontally */
+        }
+
+        .header .footer-heading {
+            font-size: 20px;        /* Adjust to your preference */
+            margin-bottom: 20px;   /* Add some space between the title and logos */
+        }
+
+        .logos {
+            display: flex;
+            flex-direction: row;   /* Make the logos align horizontally */
+            justify-content: center; /* Center them horizontally */
+            gap: 10px;             /* Add some spacing between the logos */
+        }
+
+        .logos .logo {
+            display: block;
+            margin: 5px auto;
+            width: 30px;
+            height: 30px;
+        }
+
+        .logos .logo img {
+            max-width: 100%;      /* Ensures that the images don't overflow their containers */
+            height: auto;
+        }}
 
 
     pre { line-height: 125%; }
